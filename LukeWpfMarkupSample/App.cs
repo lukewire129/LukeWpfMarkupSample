@@ -8,5 +8,6 @@ public class App : MarkupApplication
     public App()
     {
         MainWindow = new MainWindow ();
+
     }
 }
