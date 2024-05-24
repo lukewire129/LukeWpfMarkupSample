@@ -1,11 +1,13 @@
-﻿using CSharpMarkup.WPF.Support;
+﻿namespace LukeWpfMarkupSample.Pages;
 
-namespace LukeWpfMarkupSample.Pages
+public class MainWindow : MarkupWindow
 {
-    public class MainWindow : MarkupWindow
+    public MainWindow()
     {
-        public override void Build()
-        {
-        }
+        this.Build ();
     }
+    public override void Build() => Content =
+        VStack (
+            Button()
+        ).Background(Blue);
 }
